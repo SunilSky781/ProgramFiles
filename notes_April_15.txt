@@ -1,0 +1,102 @@
+
+
+1) there about 150-180 students
+2) they need take QUIZ
+3) we have to create 4 qs of QUIZ
+    A B C D
+    | |  |  \
+   30 30 30 30
+4) key-in 100 qs...MCQ, answer <<<< admin
+5) register all the students (180 of them)  <<< at one GO
+   user id is email ID
+   one pwd for all     Hello@123
+6) create QS paper and map the questions to them  (30 each/set)
+   shuffle
+7) students can login and take the test
+8) results will be displayed immediately 
+9) summary report
+=========================
+Problem to be worked ....USE CASE for today and tomr
+Stage I
+  do it without Database HashMap, LL, AL,....
+Inventory Mngt System
+  Item Master 
+    item Id   Item name    QOH   price 
+     100      Laptop       10    75000
+     200      Mobile       15    21000
+     ..      ....          ...   ....
+java Assignment1 <ENTER>
+created the ITEM MASTER
+do transaction buying ? type -1 to STOP
+enter the item ID to buy
+200
+Item name Mobile 
+QOH: 15
+how much to buy? 4
+Bill amt is 21x4 = 84000
+Payement type ? 
+Card or UPI u
+>>generated  the SCAN code 
+tran ID generated 36353439
+Tran table
+Item  Bill amt  Tran ref   Date
+200   84000     36353439   today date+time
+LATEST
+  Item Master 
+    item Id   Item name    QOH   price 
+     100      Laptop       10    75000
+     200      Mobile       10    21000
+...
+do transaction buying ? type -1 to STOP
+enter the item ID to buy
+200
+Item name Mobile 
+QOH: 15
+how much to buy? 2
+Bill amt is 21x2 = 42000
+Payement type ? 
+Card or UPI C
+>>generated  the SCAN code 
+tran ID generated 36353220
+
+Tran table
+Item  Bill amt  Tran ref   Date
+200   42000     36353220   today date+time
+do you wish to continue ? -1
+display the ITEM MASTER
+.......
+display all the trans done
+Item  Bill amt  Tran ref   Date
+200   84000     36353439   15-04-2025 11:10
+200   42000     36353220   15-04-2025 12:10
+..    ...       .... ...   .....
+STAGE II with tables in MySQL / Oracle
+java Assignment2 <ENTER>
+MySQL credentials....
+Master table with some records created SUCCESSFULLY in the DB
+do transaction buying ? type -1 to STOP
+enter the item ID to buy
+100
+Laptop
+how much to buy? 12
+Qty to purchase is NOT available in the stock
+enter less than 11
+how much to buy? 2
+do transaction buying ? type -1 to STOP
+update the TRAN table in the backend iterating the HashMap
+TranTbl
+iterate the Tran table and display records....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
