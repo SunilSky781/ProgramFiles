@@ -1,0 +1,6 @@
+public class{
+psvm(){
+System.out.println("hello world");
+}
+}
+
